@@ -4,13 +4,16 @@
 # Dependencies:
 #   "cron": "*"
 #
+# Configuration:
+#   HUBOT_TIMESHEET_REMINDER_ROOM which room the reminder should go into
+#
 # Notes:
 #   Feel free to use, adapt, expand, make configurable ...
 #
 # Author:
 #   lornajane
 
-ROOM = "#test"
+ROOM = process.env.HUBOT_TIMESHEET_REMINDER_ROOM
 
 cronJob = require('cron').CronJob
 
